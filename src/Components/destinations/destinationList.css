@@ -1,0 +1,40 @@
+.dList {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px
+}
+.dTitle{
+    padding-bottom: 20px;
+} 
+.row {
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+    width: 100%;
+    max-width: 1024px;
+} 
+.column {
+    flex: 1;
+}  
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+
+}
+.imageText {
+    position: absolute;
+    Top: 15px;
+    left: 15px;
+    color: white;
+    font-weight: 800;
+    font-size: large;
+  }
+  .image-container {
+    position: relative;
+    width: 100%;
+  }
+  

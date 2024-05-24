@@ -5,6 +5,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './header.css'
+import 'react-date-range/dist/styles.css'; // main style file
+import 'react-date-range/dist/theme/default.css'; // theme css file
 
 const header = () => {
   return (
@@ -23,11 +25,11 @@ const header = () => {
           </div>
           <div className="headerSearchItem">
           <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
-          <input type="text" placeholder="Where are you?" className="headerSearchInput"></input>
+          <input type="text" placeholder="Check-in date - Check-out date" className="headerSearchInput"></input>
           </div>
           <div className="headerSearchItem">
           <FontAwesomeIcon icon={faPerson} className="headerIcon" />
-          <input type="text" placeholder="Where are you?" className="headerSearchInput"></input>
+          <input type="text" placeholder="2 adults · 0 children · 1 room" className="headerSearchInput"></input>
           </div>
           <div className="headerSearchItem">
                 <button className="headerBtn" >
