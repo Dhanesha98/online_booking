@@ -76,9 +76,25 @@
   .optionCounterNumber{
     color: black;
   }
+  .optionCounterButton{
+    padding: 1px 3px;
+  }
   .optionItem{
-    width: 200px;
+    width: 150px;
     display: flex;
     justify-content:space-between ;
-    margin:10px;
+    margin: 10px;
+  }
+  .optionCounter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+  }
+  .optionCounterButton{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(18, 188, 230, 0.484);
+     color: #15C5E4;
+     cursor: pointer;
   }

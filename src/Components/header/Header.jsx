@@ -58,21 +58,27 @@ const [options, setOptions] = useState({
             <div className="options">
               <div className="optionItem">
                 <span className="optionText">Adult</span>
-                <button className="optionCounterButton">-</button>
-                <span className="optionCounterNumber">1</span>
-                <button className="optionCounterButton">+</button>
+                    <div className="optionCounter">
+                    <button className="optionCounterButton" onClick={()=>handleOption("adult", "d")}>-</button>
+                    <span className="optionCounterNumber">1</span>
+                    <button className="optionCounterButton" onClick={()=>handleOption("adult", "i")}>+</button>
+                    </div>   
               </div>
               <div className="optionItem">
                 <span className="optionText">Children</span>
-                <button className="optionCounterButton">-</button>
-                <span className="optionCounterNumber">1</span>
-                <button className="optionCounterButton">+</button>
+                <div className="optionCounter">
+                  <button className="optionCounterButton" onClick={()=>handleOption("children", "d")}>-</button>
+                  <span className="optionCounterNumber">1</span>
+                  <button className="optionCounterButton" onClick={()=>handleOption("children", "i")}>+</button>
+                </div>
               </div>
               <div className="optionItem">
                 <span className="optionText">Room</span>
-                <button className="optionCounterButton">-</button>
-                <span className="optionCounterNumber">1</span>
-                <button className="optionCounterButton">+</button>
+                  <div className="optionCounter">
+                    <button className="optionCounterButton" onClick={()=>handleOption("room", "d")}>-</button>
+                    <span className="optionCounterNumber">1</span>
+                    <button className="optionCounterButton" onClick={()=>handleOption("room", "i")}>+</button>
+                  </div>
               </div>
             </div>
           </div>
